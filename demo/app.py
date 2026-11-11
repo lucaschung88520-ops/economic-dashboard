@@ -112,7 +112,7 @@ with tab1:
 
     st.header("🇺🇸 美國總體經濟指標")
 
-    cpi_yoy = cpi.pct_change(12).dropna()
+    cpi_yoy = cpi.pct_change(12).dropna() * 100
 
     col1, col2, col3 = st.columns(3)
 
